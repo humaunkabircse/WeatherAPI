@@ -1,0 +1,12 @@
+.input-field{ position: relative;}
+
+.btn{
+    position: absolute;
+    top: 24px;
+    right: 25px;
+    display: flex;
+}
+
+#searchBtn{
+    cursor: pointer;
+}
