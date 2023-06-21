@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherAPI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body style="background-color: #d9eff5;">
+        <div class="container py-5 vh-100">
+      
+          <div class="row d-flex justify-content-center align-items-center h-100 round">
+            <div class="col-md-9 col-lg-7 col-xl-5">
+             
+              <div class="card text-dark shadow-4-strong">
+                <h3 class="text-center p-2">Weather Details</h3>
+                <!-- search box area -->
+                <div class="input-group p-4 border-top" style="background-color:#c0c0c0;">
+                  <input type="text" class="form-control" id="searchbox" placeholder="Enter Your city Name">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text bg-secondary text-white" id="searchBtn">Search</div>
+                  </div>
+                </div>
+                <!-- search box area -->
+
+                <!-- Weather Details -->
+                <div class="card-body p-4 border-top border-bottom text-center">
+                      <h1 id="temperature">°C</h1>
+                      <h5 id="location">Location</h5>       
+                </div>
+
+                <div class="card-header p-2">
+                    <div class="text-center mb-3">
+                      <span class="">Description: <span id="description">description</span></span>
+                      <span class="mx-2">|</span>
+                      <span class="">Humidity: <span id="humidity">humidity</span></span>
+                    </div>
+                  </div>
+              </div>
+              <!-- Weather Details -->
+            </div>
+          </div>
+        </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
